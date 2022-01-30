@@ -49,14 +49,7 @@ pg_energy_upgrade = {
 			
 			pops_auto_growth = 1.0
 			
-			pops_can_be_colonizers = yes
-			pops_can_migrate = yes
-			pops_can_reproduce = yes
-			pops_can_join_factions = no
 			pop_maintenance = 1
-			can_generate_leaders = yes
-			pops_can_be_slaves = no
-			pops_have_happiness = yes
 		        consumer_goods = yes
 			
 			effect = {
@@ -73,7 +66,7 @@ pg_energy_upgrade = {
                                  	}
 				}
 			}
-			change_species = last_created
+			change_species = last_created_species
 
 		}
 
@@ -86,7 +79,7 @@ pg_energy_upgrade = {
                                  	}
 				}
 			}
-			change_species = last_created
+			change_species = last_created_species
 		}
 
 		every_owned_army = {
@@ -111,14 +104,14 @@ pg_energy_upgrade = {
 		}
 		
 		every_owned_leader = {
-			change_species = last_created
+			change_species = last_created_species
 			change_leader_portrait = species
 		}
 		every_pool_leader = {
-			change_species = last_created
+			change_species = last_created_species
 			change_leader_portrait = species
 		}
-		change_dominant_species = { species = last_created }
+		change_dominant_species = { species = last_created_species }
 		
 		every_owned_leader = {
 			limit = {

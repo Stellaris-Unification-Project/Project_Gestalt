@@ -100,12 +100,12 @@ country_event = {
 			random_owned_planet = {
 				limit = {
 					is_capital = no
-					count_pops = {
+					count_owned_pop = {
 						limit = { has_trait = trait_vb_psi_soul_eater }
 						count > 4
 					}
 				}
-				every_planet = {
+				every_system_planet = {
 					limit = { has_planet_flag = vb_psi_desired_by_vortex@root }
 					remove_planet_flag = vb_psi_desired_by_vortex@root
 				}
@@ -150,7 +150,7 @@ country_event = {
 				exists = event_target:desired_planet
 				event_target:desired_planet = {
 					is_capital = no
-					count_pops = {
+					count_owned_pop = {
 						limit = { has_trait = trait_vb_psi_soul_eater }
 						count > 4
 					}
@@ -244,7 +244,7 @@ country_event = {
 					owner = {
 						is_same_value = root
 					}
-					count_pops = {
+					count_owned_pop = {
 						limit = { has_trait = trait_vb_psi_soul_eater }
 						count > 4
 					}
@@ -261,10 +261,7 @@ country_event = {
 		event_target:desired_planet = {
 			IF = {
 				limit = {
-					NOR = {
-						is_planet_class = pc_habitat
-						is_planet_class = pc_ringworld_habitable
-					}
+					is_artificial = no
 				}
 				# destroy_colony = yes
 				change_pc = pc_shrouded

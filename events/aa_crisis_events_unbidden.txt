@@ -109,10 +109,7 @@ country_event = {
 	option = {
 		name = crisis.1050.b
 		trigger = {
-			OR = {
-				has_ethic = "ethic_pacifist"
-				has_ethic = "ethic_fanatic_pacifist"
-			}
+			is_pacifist = yes
 			NOT = { owner_species = { has_trait = trait_gestalt } }
 		}
 		response_text = crisis.1050.b.response
@@ -121,8 +118,7 @@ country_event = {
 		name = crisis.1050.c
 		trigger = {
 			OR = {
-				has_ethic = "ethic_militarist"
-				has_ethic = "ethic_fanatic_militarist"
+				is_militarist = yes
 				has_authority = auth_machine_intelligence
 			}
 			NOT = { owner_species = { has_trait = trait_gestalt } }
@@ -132,10 +128,7 @@ country_event = {
 	option = {
 		name = crisis.1050.d
 		trigger = {
-			OR = {
-				has_ethic = "ethic_xenophobe"
-				has_ethic = "ethic_fanatic_xenophobe"
-			}
+			is_xenophobe = yes
 			NOT = { owner_species = { has_trait = trait_gestalt } }
 		}
 		response_text = crisis.1050.d.response
@@ -143,10 +136,7 @@ country_event = {
 	option = {
 		name = crisis.1050.e
 		trigger = {
-			OR = {
-				has_ethic = "ethic_xenophile"
-				has_ethic = "ethic_fanatic_xenophile"
-			}
+			is_xenophile = yes
 			NOT = { owner_species = { OR = { has_trait = trait_gestalt has_trait = trait_mechanical } } }
 		}
 		response_text = crisis.1050.e.response
@@ -154,10 +144,7 @@ country_event = {
 	option = {
 		name = crisis.1050.f
 		trigger = {
-			OR = {
-				has_ethic = "ethic_spiritualist"
-				has_ethic = "ethic_fanatic_spiritualist"
-			}
+			is_spiritualist = yes
 			NOT = { owner_species = { OR = { has_trait = trait_gestalt has_trait = trait_psionic } } }
 		}
 		response_text = crisis.1050.f.response

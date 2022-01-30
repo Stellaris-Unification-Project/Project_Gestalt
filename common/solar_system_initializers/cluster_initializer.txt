@@ -441,7 +441,7 @@ pg_cluster_01 = {
                 civic = civic_increasing_urbanization
                 civic = civic_atmospheric_pollution
               }
-              species = last_created
+              species = last_created_species
               ethos = {
             ethic = "ethic_egalitarian"
               ethic = "ethic_xenophile"
@@ -476,8 +476,8 @@ pg_cluster_01 = {
           count = 16
           create_army = {
             name = "International Tiers Peacekeeping Forces"
-            owner = last_created
-            species = last_created
+            owner = last_created_country
+            species = last_created_species
             type = "postatomic_army"
           }
         }
@@ -495,7 +495,7 @@ pg_cluster_01 = {
         while = {
           count = 13
           create_pop = {
-            species = last_created
+            species = last_created_species
           }
         }
         add_building = building_primitive_farm
@@ -519,15 +519,15 @@ pg_cluster_01 = {
         while = {
           count = 13
           create_pop = {
-            species = last_created
+            species = last_created_species
           }
         }
         while = {
           count = 16
           create_army = {
             name = "Nationalist Ardentan Army"
-            owner = last_created
-            species = last_created
+            owner = last_created_country
+            species = last_created_species
             type = "postatomic_army"
           }
         }
@@ -542,15 +542,15 @@ pg_cluster_01 = {
         while = {
           count = 13
           create_pop = {
-            species = last_created
+            species = last_created_species
           }
         }
         while = {
           count = 16
           create_army = {
             name = "Free Revolutionary Verdancien Militias"
-            owner = last_created
-            species = last_created
+            owner = last_created_country
+            species = last_created_species
             type = "postatomic_army"
           }
         }
@@ -625,19 +625,19 @@ pg_cluster_01 = {
               type = "ring_world_ruined"
               orbit_angle = 90
               orbit_distance = 45
-              location = planet
+              coords_from = planet
           }
           spawn_megastructure = {
               type = "ring_world_ruined"
               orbit_angle = 180
               orbit_distance = 45
-              location = planet
+              coords_from = planet
           }
           spawn_megastructure = {
               type = "ring_world_ruined"
               orbit_angle = 270
               orbit_distance = 45
-              location = planet
+              coords_from = planet
           }
       }
   }

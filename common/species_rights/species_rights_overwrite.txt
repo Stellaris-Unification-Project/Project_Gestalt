@@ -208,11 +208,7 @@ citizenship_assimilation = {
 		modifier = {
 			factor = 0
 			from = { 
-				OR = {
-					has_valid_civic = civic_hive_devouring_swarm
-					has_valid_civic = civic_fanatic_purifiers
-					has_valid_civic = civic_machine_terminator
-				}
+				is_homicidal = yes
 			}
 		}
 	}

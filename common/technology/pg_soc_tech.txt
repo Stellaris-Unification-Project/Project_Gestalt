@@ -93,10 +93,7 @@ tech_psionic_theory = {
 		factor = 0.5
 		modifier = {
 			factor = 0.5
-			NOR = {
-				has_ethic = "ethic_spiritualist"
-				has_ethic = "ethic_fanatic_spiritualist"
-			}
+			is_spiritualist = no
 		}
 		modifier = {
 			factor = 1.10
@@ -136,10 +133,7 @@ tech_psionic_theory = {
 		modifier = {
 			factor = 0
 			AND = {
-				OR = {
-					has_ethic = "ethic_materialist"
-					has_ethic = "ethic_fanatic_materialist"
-				}
+				is_materialist = yes
 				NOT = {
 					research_leader = {
 						area = society
@@ -158,10 +152,7 @@ tech_psionic_theory = {
 		factor = 5 #very rare tech
 		modifier = {
 			factor = 1.5
-			OR = {
-				has_ethic = ethic_spiritualist
-				has_ethic = ethic_fanatic_spiritualist
-			}
+			is_spiritualist = yes
 		}
 		modifier = {
 			factor = 1.25

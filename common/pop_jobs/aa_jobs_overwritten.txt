@@ -4,9 +4,10 @@ telepath = {
 	building_icon = building_psi_corps
 	clothes_texture_index = 5
 
+	possible_precalc = can_fill_specialist_job
+
 	possible = {
-		specialist_job_check_trigger = yes
-	}
+		}
 	
 	resources = {
 		category = planet_telepaths
@@ -36,7 +37,7 @@ telepath = {
 	
 	triggered_planet_modifier = {
 		potential = {
-			owner = { has_non_swapped_tradition = tr_domination_judgment_corps }
+			owner = { has_active_tradition = tr_domination_judgment_corps }
 		}
 		modifier = {
 			planet_crime_add = -5

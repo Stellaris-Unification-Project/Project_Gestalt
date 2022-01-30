@@ -24,9 +24,9 @@ country_event = {
 			species = this
 			add_trait = trait_vb_psi_soul_eater
 		}
-		change_dominant_species = { species = last_created }
+		change_dominant_species = { species = last_created_species }
 		every_owned_pop = {
-			change_species = last_created
+			change_species = last_created_species
 		}
 		set_variable = {
 			which = vb_psi_food value = @staring_food
