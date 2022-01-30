@@ -7,4 +7,4 @@ tags={
 }
 picture="pg.png"
 remote_file_id="1639764264"
-supported_version="2.3.*"
+supported_version="3.2.2"
